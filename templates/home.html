@@ -1,0 +1,21 @@
+{% extends 'baes.html' %}
+{% block title %}Home - MyPage Sarawut{% endblock %}
+{% block content %}
+<section class="py-5 text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light">Sarawut Pholkham</h1>
+      <div class="card border-primary mb-3 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-primary">นักศึกษาสาขาวิทยาการคอมพิวเตอร์</h5>
+          <p class="card-text">มหาวิทยาลัยราชภัฏศรีสะเกษ</p>
+        </div>
+      </div>
+      <p>
+        <a href="{% url 'about' %}" class="btn btn-primary my-2">เกี่ยวกับ</a>
+        <a href="{% url 'contact' %}" class="btn btn-secondary my-2">ติดต่อ</a>
+      </p>
+    </div>
+  </div>
+</section>
+{% endblock %}
