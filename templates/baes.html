@@ -37,34 +37,14 @@
     }
     body {
       min-height: 100vh;
-      background: linear-gradient(270deg, #6dd5ed, #2193b0, #f7971e, #ffd200, #f7971e, #2193b0, #6dd5ed);
-      background-size: 1400% 1400%;
-      animation: gradientMove 30s ease infinite;
-      position: relative;
-      z-index: 1;
-    }
-    @keyframes gradientMove {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
+      background: #f8fafc;
+      color: #222;
     }
     main, .container, .album, footer, nav {
-      position: relative;
-      z-index: 2;
       background: transparent !important;
     }
     .album.bg-light {
-      background: rgba(255,255,255,0.05) !important;
-    }
-    /* เพิ่มมิติด้วย overlay blur */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(255,255,255,0.08);
-      backdrop-filter: blur(2px);
-      z-index: 1;
-      pointer-events: none;
+      background: #fff !important;
     }
   </style>
 </head>
@@ -88,7 +68,7 @@
 
   <main>
     {% block content %}{% endblock %}
-  </main>
+  </main> 
 
   <footer class="text-muted py-5">
     <div class="container">
