@@ -19,7 +19,6 @@ def forpage(request):
     if request.method == 'POST':
         count_str = request.POST.get('count')
         print('DEBUG: count_str =', count_str)
-        context['debug_count_str'] = count_str
         try:
             number = int(count_str)
             if number > 0:
